@@ -7,7 +7,7 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface CloudfunctionsFunctionConfig extends cdktf.TerraformMetaArguments {
-  /** Memory (in MB), available to the function. Default value is 256MB. Allowed values are: 128MB, 256MB, 512MB, 1024MB, and 2048MB. */
+  /** Memory (in MB), available to the function. Default value is 256. Possible values include 128, 256, 512, 1024, etc. */
   readonly availableMemoryMb?: number;
   /**  A set of key/value environment variable pairs available during build time. */
   readonly buildEnvironmentVariables?: { [key: string]: string };

@@ -78,7 +78,7 @@ export class SqlDatabaseInstanceServerCaCert extends cdktf.ComplexComputedList {
 }
 export interface SqlDatabaseInstanceClone {
   /** The timestamp of the point in time that should be restored. */
-  readonly pointInTime: string;
+  readonly pointInTime?: string;
   /** The name of the instance from which the point in time should be restored. */
   readonly sourceInstanceName: string;
 }

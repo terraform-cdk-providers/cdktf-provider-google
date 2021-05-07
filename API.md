@@ -271,6 +271,8 @@ Name|Description
 [DataGoogleComputeGlobalForwardingRule](#cdktf-provider-google-datagooglecomputeglobalforwardingrule)|*No description*
 [DataGoogleComputeGlobalForwardingRuleMetadataFilters](#cdktf-provider-google-datagooglecomputeglobalforwardingrulemetadatafilters)|*No description*
 [DataGoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabels](#cdktf-provider-google-datagooglecomputeglobalforwardingrulemetadatafiltersfilterlabels)|*No description*
+[DataGoogleComputeHaVpnGateway](#cdktf-provider-google-datagooglecomputehavpngateway)|*No description*
+[DataGoogleComputeHaVpnGatewayVpnInterfaces](#cdktf-provider-google-datagooglecomputehavpngatewayvpninterfaces)|*No description*
 [DataGoogleComputeHealthCheck](#cdktf-provider-google-datagooglecomputehealthcheck)|*No description*
 [DataGoogleComputeHealthCheckGrpcHealthCheck](#cdktf-provider-google-datagooglecomputehealthcheckgrpchealthcheck)|*No description*
 [DataGoogleComputeHealthCheckHttp2HealthCheck](#cdktf-provider-google-datagooglecomputehealthcheckhttp2healthcheck)|*No description*
@@ -483,6 +485,7 @@ Name|Description
 [DataprocJobIamMember](#cdktf-provider-google-dataprocjobiammember)|*No description*
 [DataprocJobIamPolicy](#cdktf-provider-google-dataprocjobiampolicy)|*No description*
 [DataprocJobStatus](#cdktf-provider-google-dataprocjobstatus)|*No description*
+[DataprocWorkflowTemplate](#cdktf-provider-google-dataprocworkflowtemplate)|*No description*
 [DatastoreIndex](#cdktf-provider-google-datastoreindex)|*No description*
 [DeploymentManagerDeployment](#cdktf-provider-google-deploymentmanagerdeployment)|*No description*
 [DialogflowAgent](#cdktf-provider-google-dialogflowagent)|*No description*
@@ -1656,6 +1659,7 @@ Name|Description
 [DataGoogleComputeForwardingRuleConfig](#cdktf-provider-google-datagooglecomputeforwardingruleconfig)|*No description*
 [DataGoogleComputeGlobalAddressConfig](#cdktf-provider-google-datagooglecomputeglobaladdressconfig)|*No description*
 [DataGoogleComputeGlobalForwardingRuleConfig](#cdktf-provider-google-datagooglecomputeglobalforwardingruleconfig)|*No description*
+[DataGoogleComputeHaVpnGatewayConfig](#cdktf-provider-google-datagooglecomputehavpngatewayconfig)|*No description*
 [DataGoogleComputeHealthCheckConfig](#cdktf-provider-google-datagooglecomputehealthcheckconfig)|*No description*
 [DataGoogleComputeImageConfig](#cdktf-provider-google-datagooglecomputeimageconfig)|*No description*
 [DataGoogleComputeInstanceConfig](#cdktf-provider-google-datagooglecomputeinstanceconfig)|*No description*
@@ -1812,6 +1816,7 @@ Name|Description
 [DataprocClusterClusterConfigAutoscalingConfig](#cdktf-provider-google-dataprocclusterclusterconfigautoscalingconfig)|*No description*
 [DataprocClusterClusterConfigEncryptionConfig](#cdktf-provider-google-dataprocclusterclusterconfigencryptionconfig)|*No description*
 [DataprocClusterClusterConfigGceClusterConfig](#cdktf-provider-google-dataprocclusterclusterconfiggceclusterconfig)|*No description*
+[DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig](#cdktf-provider-google-dataprocclusterclusterconfiggceclusterconfigshieldedinstanceconfig)|*No description*
 [DataprocClusterClusterConfigInitializationAction](#cdktf-provider-google-dataprocclusterclusterconfiginitializationaction)|*No description*
 [DataprocClusterClusterConfigMasterConfig](#cdktf-provider-google-dataprocclusterclusterconfigmasterconfig)|*No description*
 [DataprocClusterClusterConfigMasterConfigAccelerators](#cdktf-provider-google-dataprocclusterclusterconfigmasterconfigaccelerators)|*No description*
@@ -1852,6 +1857,57 @@ Name|Description
 [DataprocJobSparksqlConfig](#cdktf-provider-google-dataprocjobsparksqlconfig)|*No description*
 [DataprocJobSparksqlConfigLoggingConfig](#cdktf-provider-google-dataprocjobsparksqlconfigloggingconfig)|*No description*
 [DataprocJobTimeouts](#cdktf-provider-google-dataprocjobtimeouts)|*No description*
+[DataprocWorkflowTemplateConfig](#cdktf-provider-google-dataprocworkflowtemplateconfig)|*No description*
+[DataprocWorkflowTemplateJobs](#cdktf-provider-google-dataprocworkflowtemplatejobs)|*No description*
+[DataprocWorkflowTemplateJobsHadoopJob](#cdktf-provider-google-dataprocworkflowtemplatejobshadoopjob)|*No description*
+[DataprocWorkflowTemplateJobsHadoopJobLoggingConfig](#cdktf-provider-google-dataprocworkflowtemplatejobshadoopjobloggingconfig)|*No description*
+[DataprocWorkflowTemplateJobsHiveJob](#cdktf-provider-google-dataprocworkflowtemplatejobshivejob)|*No description*
+[DataprocWorkflowTemplateJobsHiveJobQueryList](#cdktf-provider-google-dataprocworkflowtemplatejobshivejobquerylist)|*No description*
+[DataprocWorkflowTemplateJobsPigJob](#cdktf-provider-google-dataprocworkflowtemplatejobspigjob)|*No description*
+[DataprocWorkflowTemplateJobsPigJobLoggingConfig](#cdktf-provider-google-dataprocworkflowtemplatejobspigjobloggingconfig)|*No description*
+[DataprocWorkflowTemplateJobsPigJobQueryList](#cdktf-provider-google-dataprocworkflowtemplatejobspigjobquerylist)|*No description*
+[DataprocWorkflowTemplateJobsPrestoJob](#cdktf-provider-google-dataprocworkflowtemplatejobsprestojob)|*No description*
+[DataprocWorkflowTemplateJobsPrestoJobLoggingConfig](#cdktf-provider-google-dataprocworkflowtemplatejobsprestojobloggingconfig)|*No description*
+[DataprocWorkflowTemplateJobsPrestoJobQueryList](#cdktf-provider-google-dataprocworkflowtemplatejobsprestojobquerylist)|*No description*
+[DataprocWorkflowTemplateJobsPysparkJob](#cdktf-provider-google-dataprocworkflowtemplatejobspysparkjob)|*No description*
+[DataprocWorkflowTemplateJobsPysparkJobLoggingConfig](#cdktf-provider-google-dataprocworkflowtemplatejobspysparkjobloggingconfig)|*No description*
+[DataprocWorkflowTemplateJobsScheduling](#cdktf-provider-google-dataprocworkflowtemplatejobsscheduling)|*No description*
+[DataprocWorkflowTemplateJobsSparkJob](#cdktf-provider-google-dataprocworkflowtemplatejobssparkjob)|*No description*
+[DataprocWorkflowTemplateJobsSparkJobLoggingConfig](#cdktf-provider-google-dataprocworkflowtemplatejobssparkjobloggingconfig)|*No description*
+[DataprocWorkflowTemplateJobsSparkRJob](#cdktf-provider-google-dataprocworkflowtemplatejobssparkrjob)|*No description*
+[DataprocWorkflowTemplateJobsSparkRJobLoggingConfig](#cdktf-provider-google-dataprocworkflowtemplatejobssparkrjobloggingconfig)|*No description*
+[DataprocWorkflowTemplateJobsSparkSqlJob](#cdktf-provider-google-dataprocworkflowtemplatejobssparksqljob)|*No description*
+[DataprocWorkflowTemplateJobsSparkSqlJobLoggingConfig](#cdktf-provider-google-dataprocworkflowtemplatejobssparksqljobloggingconfig)|*No description*
+[DataprocWorkflowTemplateJobsSparkSqlJobQueryList](#cdktf-provider-google-dataprocworkflowtemplatejobssparksqljobquerylist)|*No description*
+[DataprocWorkflowTemplateParameters](#cdktf-provider-google-dataprocworkflowtemplateparameters)|*No description*
+[DataprocWorkflowTemplateParametersValidation](#cdktf-provider-google-dataprocworkflowtemplateparametersvalidation)|*No description*
+[DataprocWorkflowTemplateParametersValidationRegex](#cdktf-provider-google-dataprocworkflowtemplateparametersvalidationregex)|*No description*
+[DataprocWorkflowTemplateParametersValidationValues](#cdktf-provider-google-dataprocworkflowtemplateparametersvalidationvalues)|*No description*
+[DataprocWorkflowTemplatePlacement](#cdktf-provider-google-dataprocworkflowtemplateplacement)|*No description*
+[DataprocWorkflowTemplatePlacementClusterSelector](#cdktf-provider-google-dataprocworkflowtemplateplacementclusterselector)|*No description*
+[DataprocWorkflowTemplatePlacementManagedCluster](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedcluster)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfig)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigautoscalingconfig)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigencryptionconfig)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigendpointconfig)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfiggceclusterconfig)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinity](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfiggceclusterconfignodegroupaffinity)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinity](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfiggceclusterconfigreservationaffinity)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfiginitializationactions)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfiglifecycleconfig)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigmasterconfig)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigmasterconfigaccelerators)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigmasterconfigdiskconfig)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigsecondaryworkerconfig)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigsecondaryworkerconfigaccelerators)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigsecondaryworkerconfigdiskconfig)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigsecurityconfig)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigsecurityconfigkerberosconfig)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigSoftwareConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigsoftwareconfig)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigworkerconfig)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigworkerconfigaccelerators)|*No description*
+[DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigworkerconfigdiskconfig)|*No description*
+[DataprocWorkflowTemplateTimeouts](#cdktf-provider-google-dataprocworkflowtemplatetimeouts)|*No description*
 [DatastoreIndexConfig](#cdktf-provider-google-datastoreindexconfig)|*No description*
 [DatastoreIndexProperties](#cdktf-provider-google-datastoreindexproperties)|*No description*
 [DatastoreIndexTimeouts](#cdktf-provider-google-datastoreindextimeouts)|*No description*
@@ -2329,6 +2385,7 @@ Name|Description
 [SourcerepoRepositoryPubsubConfigs](#cdktf-provider-google-sourcereporepositorypubsubconfigs)|*No description*
 [SourcerepoRepositoryTimeouts](#cdktf-provider-google-sourcereporepositorytimeouts)|*No description*
 [SpannerDatabaseConfig](#cdktf-provider-google-spannerdatabaseconfig)|*No description*
+[SpannerDatabaseEncryptionConfig](#cdktf-provider-google-spannerdatabaseencryptionconfig)|*No description*
 [SpannerDatabaseIamBindingCondition](#cdktf-provider-google-spannerdatabaseiambindingcondition)|*No description*
 [SpannerDatabaseIamBindingConfig](#cdktf-provider-google-spannerdatabaseiambindingconfig)|*No description*
 [SpannerDatabaseIamMemberCondition](#cdktf-provider-google-spannerdatabaseiammembercondition)|*No description*
@@ -33735,6 +33792,136 @@ Name | Type | Description
 
 
 
+## class DataGoogleComputeHaVpnGateway  <a id="cdktf-provider-google-datagooglecomputehavpngateway"></a>
+
+
+
+__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
+
+### Initializer
+
+
+
+
+```ts
+new DataGoogleComputeHaVpnGateway(scope: Construct, id: string, config: DataGoogleComputeHaVpnGatewayConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  *No description*
+* **id** (<code>string</code>)  *No description*
+* **config** (<code>[DataGoogleComputeHaVpnGatewayConfig](#cdktf-provider-google-datagooglecomputehavpngatewayconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **name** (<code>string</code>)  Name of the resource. 
+  * **project** (<code>string</code>)  *No description* __*Optional*__
+  * **region** (<code>string</code>)  The region this gateway should sit in. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**description** | <code>string</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**nameInput** | <code>string</code> | <span></span>
+**network** | <code>string</code> | <span></span>
+**project** | <code>string</code> | <span></span>
+**region** | <code>string</code> | <span></span>
+**selfLink** | <code>string</code> | <span></span>
+**projectInput**? | <code>string</code> | __*Optional*__
+**regionInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetProject() <a id="cdktf-provider-google-datagooglecomputehavpngateway-resetproject"></a>
+
+
+
+```ts
+resetProject(): void
+```
+
+
+
+
+
+#### resetRegion() <a id="cdktf-provider-google-datagooglecomputehavpngateway-resetregion"></a>
+
+
+
+```ts
+resetRegion(): void
+```
+
+
+
+
+
+#### vpnInterfaces(index) <a id="cdktf-provider-google-datagooglecomputehavpngateway-vpninterfaces"></a>
+
+
+
+```ts
+vpnInterfaces(index: string): DataGoogleComputeHaVpnGatewayVpnInterfaces
+```
+
+* **index** (<code>string</code>)  *No description*
+
+__Returns__:
+* <code>[DataGoogleComputeHaVpnGatewayVpnInterfaces](#cdktf-provider-google-datagooglecomputehavpngatewayvpninterfaces)</code>
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-google-datagooglecomputehavpngateway-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class DataGoogleComputeHaVpnGatewayVpnInterfaces  <a id="cdktf-provider-google-datagooglecomputehavpngatewayvpninterfaces"></a>
+
+
+
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new DataGoogleComputeHaVpnGatewayVpnInterfaces(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**id** | <code>number</code> | <span></span>
+**ipAddress** | <code>string</code> | <span></span>
+
+
+
 ## class DataGoogleComputeHealthCheck  <a id="cdktf-provider-google-datagooglecomputehealthcheck"></a>
 
 
@@ -46681,6 +46868,145 @@ Name | Type | Description
 **state** | <code>string</code> | <span></span>
 **stateStartTime** | <code>string</code> | <span></span>
 **substate** | <code>string</code> | <span></span>
+
+
+
+## class DataprocWorkflowTemplate  <a id="cdktf-provider-google-dataprocworkflowtemplate"></a>
+
+
+
+__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Extends__: [TerraformResource](#cdktf-terraformresource)
+
+### Initializer
+
+
+
+
+```ts
+new DataprocWorkflowTemplate(scope: Construct, id: string, config: DataprocWorkflowTemplateConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  *No description*
+* **id** (<code>string</code>)  *No description*
+* **config** (<code>[DataprocWorkflowTemplateConfig](#cdktf-provider-google-dataprocworkflowtemplateconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **jobs** (<code>Array<[DataprocWorkflowTemplateJobs](#cdktf-provider-google-dataprocworkflowtemplatejobs)></code>)  jobs block. 
+  * **location** (<code>string</code>)  *No description* 
+  * **name** (<code>string</code>)  *No description* 
+  * **placement** (<code>Array<[DataprocWorkflowTemplatePlacement](#cdktf-provider-google-dataprocworkflowtemplateplacement)></code>)  placement block. 
+  * **labels** (<code>Map<string, string></code>)  *No description* __*Optional*__
+  * **parameters** (<code>Array<[DataprocWorkflowTemplateParameters](#cdktf-provider-google-dataprocworkflowtemplateparameters)></code>)  parameters block. __*Optional*__
+  * **project** (<code>string</code>)  *No description* __*Optional*__
+  * **timeouts** (<code>[DataprocWorkflowTemplateTimeouts](#cdktf-provider-google-dataprocworkflowtemplatetimeouts)</code>)  timeouts block. __*Optional*__
+  * **version** (<code>number</code>)  *No description* __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**createTime** | <code>string</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**jobs** | <code>Array<[DataprocWorkflowTemplateJobs](#cdktf-provider-google-dataprocworkflowtemplatejobs)></code> | <span></span>
+**jobsInput** | <code>Array<[DataprocWorkflowTemplateJobs](#cdktf-provider-google-dataprocworkflowtemplatejobs)></code> | <span></span>
+**labels** | <code>Map<string, string></code> | <span></span>
+**location** | <code>string</code> | <span></span>
+**locationInput** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**nameInput** | <code>string</code> | <span></span>
+**parameters** | <code>Array<[DataprocWorkflowTemplateParameters](#cdktf-provider-google-dataprocworkflowtemplateparameters)></code> | <span></span>
+**placement** | <code>Array<[DataprocWorkflowTemplatePlacement](#cdktf-provider-google-dataprocworkflowtemplateplacement)></code> | <span></span>
+**placementInput** | <code>Array<[DataprocWorkflowTemplatePlacement](#cdktf-provider-google-dataprocworkflowtemplateplacement)></code> | <span></span>
+**project** | <code>string</code> | <span></span>
+**timeouts** | <code>[DataprocWorkflowTemplateTimeouts](#cdktf-provider-google-dataprocworkflowtemplatetimeouts)</code> | <span></span>
+**updateTime** | <code>string</code> | <span></span>
+**version** | <code>number</code> | <span></span>
+**labelsInput**? | <code>Map<string, string></code> | __*Optional*__
+**parametersInput**? | <code>Array<[DataprocWorkflowTemplateParameters](#cdktf-provider-google-dataprocworkflowtemplateparameters)></code> | __*Optional*__
+**projectInput**? | <code>string</code> | __*Optional*__
+**timeoutsInput**? | <code>[DataprocWorkflowTemplateTimeouts](#cdktf-provider-google-dataprocworkflowtemplatetimeouts)</code> | __*Optional*__
+**versionInput**? | <code>number</code> | __*Optional*__
+
+### Methods
+
+
+#### resetLabels() <a id="cdktf-provider-google-dataprocworkflowtemplate-resetlabels"></a>
+
+
+
+```ts
+resetLabels(): void
+```
+
+
+
+
+
+#### resetParameters() <a id="cdktf-provider-google-dataprocworkflowtemplate-resetparameters"></a>
+
+
+
+```ts
+resetParameters(): void
+```
+
+
+
+
+
+#### resetProject() <a id="cdktf-provider-google-dataprocworkflowtemplate-resetproject"></a>
+
+
+
+```ts
+resetProject(): void
+```
+
+
+
+
+
+#### resetTimeouts() <a id="cdktf-provider-google-dataprocworkflowtemplate-resettimeouts"></a>
+
+
+
+```ts
+resetTimeouts(): void
+```
+
+
+
+
+
+#### resetVersion() <a id="cdktf-provider-google-dataprocworkflowtemplate-resetversion"></a>
+
+
+
+```ts
+resetVersion(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-google-dataprocworkflowtemplate-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
 
 
 
@@ -66596,6 +66922,7 @@ new SpannerDatabase(scope: Construct, id: string, config: SpannerDatabaseConfig)
   * **name** (<code>string</code>)  A unique identifier for the database, which cannot be changed after the instance is created. 
   * **ddl** (<code>Array<string></code>)  An optional list of DDL statements to run inside the newly created database. __*Optional*__
   * **deletionProtection** (<code>boolean</code>)  *No description* __*Optional*__
+  * **encryptionConfig** (<code>Array<[SpannerDatabaseEncryptionConfig](#cdktf-provider-google-spannerdatabaseencryptionconfig)></code>)  encryption_config block. __*Optional*__
   * **project** (<code>string</code>)  *No description* __*Optional*__
   * **timeouts** (<code>[SpannerDatabaseTimeouts](#cdktf-provider-google-spannerdatabasetimeouts)</code>)  timeouts block. __*Optional*__
 
@@ -66608,6 +66935,7 @@ Name | Type | Description
 -----|------|-------------
 **ddl** | <code>Array<string></code> | <span></span>
 **deletionProtection** | <code>boolean</code> | <span></span>
+**encryptionConfig** | <code>Array<[SpannerDatabaseEncryptionConfig](#cdktf-provider-google-spannerdatabaseencryptionconfig)></code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **instance** | <code>string</code> | <span></span>
 **instanceInput** | <code>string</code> | <span></span>
@@ -66618,6 +66946,7 @@ Name | Type | Description
 **timeouts** | <code>[SpannerDatabaseTimeouts](#cdktf-provider-google-spannerdatabasetimeouts)</code> | <span></span>
 **ddlInput**? | <code>Array<string></code> | __*Optional*__
 **deletionProtectionInput**? | <code>boolean</code> | __*Optional*__
+**encryptionConfigInput**? | <code>Array<[SpannerDatabaseEncryptionConfig](#cdktf-provider-google-spannerdatabaseencryptionconfig)></code> | __*Optional*__
 **projectInput**? | <code>string</code> | __*Optional*__
 **timeoutsInput**? | <code>[SpannerDatabaseTimeouts](#cdktf-provider-google-spannerdatabasetimeouts)</code> | __*Optional*__
 
@@ -66642,6 +66971,18 @@ resetDdl(): void
 
 ```ts
 resetDeletionProtection(): void
+```
+
+
+
+
+
+#### resetEncryptionConfig() <a id="cdktf-provider-google-spannerdatabase-resetencryptionconfig"></a>
+
+
+
+```ts
+resetEncryptionConfig(): void
 ```
 
 
@@ -87011,6 +87352,25 @@ Name | Type | Description
 
 
 
+## struct DataGoogleComputeHaVpnGatewayConfig  <a id="cdktf-provider-google-datagooglecomputehavpngatewayconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | Name of the resource.
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**project**? | <code>string</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**region**? | <code>string</code> | The region this gateway should sit in.<br/>__*Optional*__
+
+
+
 ## struct DataGoogleComputeHealthCheckConfig  <a id="cdktf-provider-google-datagooglecomputehealthcheckconfig"></a>
 
 
@@ -89605,9 +89965,25 @@ Name | Type | Description
 **network**? | <code>string</code> | The name or self_link of the Google Compute Engine network to the cluster will be part of.<br/>__*Optional*__
 **serviceAccount**? | <code>string</code> | The service account to be used by the Node VMs.<br/>__*Optional*__
 **serviceAccountScopes**? | <code>Array<string></code> | The set of Google API scopes to be made available on all of the node VMs under the service_account specified.<br/>__*Optional*__
+**shieldedInstanceConfig**? | <code>Array<[DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig](#cdktf-provider-google-dataprocclusterclusterconfiggceclusterconfigshieldedinstanceconfig)></code> | shielded_instance_config block.<br/>__*Optional*__
 **subnetwork**? | <code>string</code> | The name or self_link of the Google Compute Engine subnetwork the cluster will be part of.<br/>__*Optional*__
 **tags**? | <code>Array<string></code> | The list of instance tags applied to instances in the cluster.<br/>__*Optional*__
 **zone**? | <code>string</code> | The GCP zone where your data is stored and used (i.e. where the master and the worker nodes will be created in). If region is set to 'global' (default) then zone is mandatory, otherwise GCP is able to make use of Auto Zone Placement to determine this automatically for you. Note: This setting additionally determines and restricts which computing resources are available for use with other configs such as cluster_config.master_config.machine_type and cluster_config.worker_config.machine_type.<br/>__*Optional*__
+
+
+
+## struct DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig  <a id="cdktf-provider-google-dataprocclusterclusterconfiggceclusterconfigshieldedinstanceconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**enableIntegrityMonitoring**? | <code>boolean</code> | Defines whether instances have integrity monitoring enabled.<br/>__*Optional*__
+**enableSecureBoot**? | <code>boolean</code> | Defines whether instances have Secure Boot enabled.<br/>__*Optional*__
+**enableVtpm**? | <code>boolean</code> | Defines whether instances have the vTPM enabled.<br/>__*Optional*__
 
 
 
@@ -90280,6 +90656,819 @@ Name | Type | Description
 
 
 ## struct DataprocJobTimeouts  <a id="cdktf-provider-google-dataprocjobtimeouts"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**create**? | <code>string</code> | __*Optional*__
+**delete**? | <code>string</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateConfig  <a id="cdktf-provider-google-dataprocworkflowtemplateconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**jobs** | <code>Array<[DataprocWorkflowTemplateJobs](#cdktf-provider-google-dataprocworkflowtemplatejobs)></code> | jobs block.
+**location** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**placement** | <code>Array<[DataprocWorkflowTemplatePlacement](#cdktf-provider-google-dataprocworkflowtemplateplacement)></code> | placement block.
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**labels**? | <code>Map<string, string></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**parameters**? | <code>Array<[DataprocWorkflowTemplateParameters](#cdktf-provider-google-dataprocworkflowtemplateparameters)></code> | parameters block.<br/>__*Optional*__
+**project**? | <code>string</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**timeouts**? | <code>[DataprocWorkflowTemplateTimeouts](#cdktf-provider-google-dataprocworkflowtemplatetimeouts)</code> | timeouts block.<br/>__*Optional*__
+**version**? | <code>number</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateJobs  <a id="cdktf-provider-google-dataprocworkflowtemplatejobs"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**stepId** | <code>string</code> | <span></span>
+**hadoopJob**? | <code>Array<[DataprocWorkflowTemplateJobsHadoopJob](#cdktf-provider-google-dataprocworkflowtemplatejobshadoopjob)></code> | hadoop_job block.<br/>__*Optional*__
+**hiveJob**? | <code>Array<[DataprocWorkflowTemplateJobsHiveJob](#cdktf-provider-google-dataprocworkflowtemplatejobshivejob)></code> | hive_job block.<br/>__*Optional*__
+**labels**? | <code>Map<string, string></code> | __*Optional*__
+**pigJob**? | <code>Array<[DataprocWorkflowTemplateJobsPigJob](#cdktf-provider-google-dataprocworkflowtemplatejobspigjob)></code> | pig_job block.<br/>__*Optional*__
+**prerequisiteStepIds**? | <code>Array<string></code> | __*Optional*__
+**prestoJob**? | <code>Array<[DataprocWorkflowTemplateJobsPrestoJob](#cdktf-provider-google-dataprocworkflowtemplatejobsprestojob)></code> | presto_job block.<br/>__*Optional*__
+**pysparkJob**? | <code>Array<[DataprocWorkflowTemplateJobsPysparkJob](#cdktf-provider-google-dataprocworkflowtemplatejobspysparkjob)></code> | pyspark_job block.<br/>__*Optional*__
+**scheduling**? | <code>Array<[DataprocWorkflowTemplateJobsScheduling](#cdktf-provider-google-dataprocworkflowtemplatejobsscheduling)></code> | scheduling block.<br/>__*Optional*__
+**sparkJob**? | <code>Array<[DataprocWorkflowTemplateJobsSparkJob](#cdktf-provider-google-dataprocworkflowtemplatejobssparkjob)></code> | spark_job block.<br/>__*Optional*__
+**sparkRJob**? | <code>Array<[DataprocWorkflowTemplateJobsSparkRJob](#cdktf-provider-google-dataprocworkflowtemplatejobssparkrjob)></code> | spark_r_job block.<br/>__*Optional*__
+**sparkSqlJob**? | <code>Array<[DataprocWorkflowTemplateJobsSparkSqlJob](#cdktf-provider-google-dataprocworkflowtemplatejobssparksqljob)></code> | spark_sql_job block.<br/>__*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateJobsHadoopJob  <a id="cdktf-provider-google-dataprocworkflowtemplatejobshadoopjob"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**archiveUris**? | <code>Array<string></code> | __*Optional*__
+**args**? | <code>Array<string></code> | __*Optional*__
+**fileUris**? | <code>Array<string></code> | __*Optional*__
+**jarFileUris**? | <code>Array<string></code> | __*Optional*__
+**loggingConfig**? | <code>Array<[DataprocWorkflowTemplateJobsHadoopJobLoggingConfig](#cdktf-provider-google-dataprocworkflowtemplatejobshadoopjobloggingconfig)></code> | logging_config block.<br/>__*Optional*__
+**mainClass**? | <code>string</code> | __*Optional*__
+**mainJarFileUri**? | <code>string</code> | __*Optional*__
+**properties**? | <code>Map<string, string></code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateJobsHadoopJobLoggingConfig  <a id="cdktf-provider-google-dataprocworkflowtemplatejobshadoopjobloggingconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**driverLogLevels**? | <code>Map<string, string></code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateJobsHiveJob  <a id="cdktf-provider-google-dataprocworkflowtemplatejobshivejob"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**continueOnFailure**? | <code>boolean</code> | __*Optional*__
+**jarFileUris**? | <code>Array<string></code> | __*Optional*__
+**properties**? | <code>Map<string, string></code> | __*Optional*__
+**queryFileUri**? | <code>string</code> | __*Optional*__
+**queryList**? | <code>Array<[DataprocWorkflowTemplateJobsHiveJobQueryList](#cdktf-provider-google-dataprocworkflowtemplatejobshivejobquerylist)></code> | query_list block.<br/>__*Optional*__
+**scriptVariables**? | <code>Map<string, string></code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateJobsHiveJobQueryList  <a id="cdktf-provider-google-dataprocworkflowtemplatejobshivejobquerylist"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**queries** | <code>Array<string></code> | <span></span>
+
+
+
+## struct DataprocWorkflowTemplateJobsPigJob  <a id="cdktf-provider-google-dataprocworkflowtemplatejobspigjob"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**continueOnFailure**? | <code>boolean</code> | __*Optional*__
+**jarFileUris**? | <code>Array<string></code> | __*Optional*__
+**loggingConfig**? | <code>Array<[DataprocWorkflowTemplateJobsPigJobLoggingConfig](#cdktf-provider-google-dataprocworkflowtemplatejobspigjobloggingconfig)></code> | logging_config block.<br/>__*Optional*__
+**properties**? | <code>Map<string, string></code> | __*Optional*__
+**queryFileUri**? | <code>string</code> | __*Optional*__
+**queryList**? | <code>Array<[DataprocWorkflowTemplateJobsPigJobQueryList](#cdktf-provider-google-dataprocworkflowtemplatejobspigjobquerylist)></code> | query_list block.<br/>__*Optional*__
+**scriptVariables**? | <code>Map<string, string></code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateJobsPigJobLoggingConfig  <a id="cdktf-provider-google-dataprocworkflowtemplatejobspigjobloggingconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**driverLogLevels**? | <code>Map<string, string></code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateJobsPigJobQueryList  <a id="cdktf-provider-google-dataprocworkflowtemplatejobspigjobquerylist"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**queries** | <code>Array<string></code> | <span></span>
+
+
+
+## struct DataprocWorkflowTemplateJobsPrestoJob  <a id="cdktf-provider-google-dataprocworkflowtemplatejobsprestojob"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**clientTags**? | <code>Array<string></code> | __*Optional*__
+**continueOnFailure**? | <code>boolean</code> | __*Optional*__
+**loggingConfig**? | <code>Array<[DataprocWorkflowTemplateJobsPrestoJobLoggingConfig](#cdktf-provider-google-dataprocworkflowtemplatejobsprestojobloggingconfig)></code> | logging_config block.<br/>__*Optional*__
+**outputFormat**? | <code>string</code> | __*Optional*__
+**properties**? | <code>Map<string, string></code> | __*Optional*__
+**queryFileUri**? | <code>string</code> | __*Optional*__
+**queryList**? | <code>Array<[DataprocWorkflowTemplateJobsPrestoJobQueryList](#cdktf-provider-google-dataprocworkflowtemplatejobsprestojobquerylist)></code> | query_list block.<br/>__*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateJobsPrestoJobLoggingConfig  <a id="cdktf-provider-google-dataprocworkflowtemplatejobsprestojobloggingconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**driverLogLevels**? | <code>Map<string, string></code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateJobsPrestoJobQueryList  <a id="cdktf-provider-google-dataprocworkflowtemplatejobsprestojobquerylist"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**queries** | <code>Array<string></code> | <span></span>
+
+
+
+## struct DataprocWorkflowTemplateJobsPysparkJob  <a id="cdktf-provider-google-dataprocworkflowtemplatejobspysparkjob"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**mainPythonFileUri** | <code>string</code> | <span></span>
+**archiveUris**? | <code>Array<string></code> | __*Optional*__
+**args**? | <code>Array<string></code> | __*Optional*__
+**fileUris**? | <code>Array<string></code> | __*Optional*__
+**jarFileUris**? | <code>Array<string></code> | __*Optional*__
+**loggingConfig**? | <code>Array<[DataprocWorkflowTemplateJobsPysparkJobLoggingConfig](#cdktf-provider-google-dataprocworkflowtemplatejobspysparkjobloggingconfig)></code> | logging_config block.<br/>__*Optional*__
+**properties**? | <code>Map<string, string></code> | __*Optional*__
+**pythonFileUris**? | <code>Array<string></code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateJobsPysparkJobLoggingConfig  <a id="cdktf-provider-google-dataprocworkflowtemplatejobspysparkjobloggingconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**driverLogLevels**? | <code>Map<string, string></code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateJobsScheduling  <a id="cdktf-provider-google-dataprocworkflowtemplatejobsscheduling"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**maxFailuresPerHour**? | <code>number</code> | __*Optional*__
+**maxFailuresTotal**? | <code>number</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateJobsSparkJob  <a id="cdktf-provider-google-dataprocworkflowtemplatejobssparkjob"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**archiveUris**? | <code>Array<string></code> | __*Optional*__
+**args**? | <code>Array<string></code> | __*Optional*__
+**fileUris**? | <code>Array<string></code> | __*Optional*__
+**jarFileUris**? | <code>Array<string></code> | __*Optional*__
+**loggingConfig**? | <code>Array<[DataprocWorkflowTemplateJobsSparkJobLoggingConfig](#cdktf-provider-google-dataprocworkflowtemplatejobssparkjobloggingconfig)></code> | logging_config block.<br/>__*Optional*__
+**mainClass**? | <code>string</code> | __*Optional*__
+**mainJarFileUri**? | <code>string</code> | __*Optional*__
+**properties**? | <code>Map<string, string></code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateJobsSparkJobLoggingConfig  <a id="cdktf-provider-google-dataprocworkflowtemplatejobssparkjobloggingconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**driverLogLevels**? | <code>Map<string, string></code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateJobsSparkRJob  <a id="cdktf-provider-google-dataprocworkflowtemplatejobssparkrjob"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**mainRFileUri** | <code>string</code> | <span></span>
+**archiveUris**? | <code>Array<string></code> | __*Optional*__
+**args**? | <code>Array<string></code> | __*Optional*__
+**fileUris**? | <code>Array<string></code> | __*Optional*__
+**loggingConfig**? | <code>Array<[DataprocWorkflowTemplateJobsSparkRJobLoggingConfig](#cdktf-provider-google-dataprocworkflowtemplatejobssparkrjobloggingconfig)></code> | logging_config block.<br/>__*Optional*__
+**properties**? | <code>Map<string, string></code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateJobsSparkRJobLoggingConfig  <a id="cdktf-provider-google-dataprocworkflowtemplatejobssparkrjobloggingconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**driverLogLevels**? | <code>Map<string, string></code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateJobsSparkSqlJob  <a id="cdktf-provider-google-dataprocworkflowtemplatejobssparksqljob"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**jarFileUris**? | <code>Array<string></code> | __*Optional*__
+**loggingConfig**? | <code>Array<[DataprocWorkflowTemplateJobsSparkSqlJobLoggingConfig](#cdktf-provider-google-dataprocworkflowtemplatejobssparksqljobloggingconfig)></code> | logging_config block.<br/>__*Optional*__
+**properties**? | <code>Map<string, string></code> | __*Optional*__
+**queryFileUri**? | <code>string</code> | __*Optional*__
+**queryList**? | <code>Array<[DataprocWorkflowTemplateJobsSparkSqlJobQueryList](#cdktf-provider-google-dataprocworkflowtemplatejobssparksqljobquerylist)></code> | query_list block.<br/>__*Optional*__
+**scriptVariables**? | <code>Map<string, string></code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateJobsSparkSqlJobLoggingConfig  <a id="cdktf-provider-google-dataprocworkflowtemplatejobssparksqljobloggingconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**driverLogLevels**? | <code>Map<string, string></code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateJobsSparkSqlJobQueryList  <a id="cdktf-provider-google-dataprocworkflowtemplatejobssparksqljobquerylist"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**queries** | <code>Array<string></code> | <span></span>
+
+
+
+## struct DataprocWorkflowTemplateParameters  <a id="cdktf-provider-google-dataprocworkflowtemplateparameters"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**fields** | <code>Array<string></code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**description**? | <code>string</code> | __*Optional*__
+**validation**? | <code>Array<[DataprocWorkflowTemplateParametersValidation](#cdktf-provider-google-dataprocworkflowtemplateparametersvalidation)></code> | validation block.<br/>__*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateParametersValidation  <a id="cdktf-provider-google-dataprocworkflowtemplateparametersvalidation"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**regex**? | <code>Array<[DataprocWorkflowTemplateParametersValidationRegex](#cdktf-provider-google-dataprocworkflowtemplateparametersvalidationregex)></code> | regex block.<br/>__*Optional*__
+**values**? | <code>Array<[DataprocWorkflowTemplateParametersValidationValues](#cdktf-provider-google-dataprocworkflowtemplateparametersvalidationvalues)></code> | values block.<br/>__*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateParametersValidationRegex  <a id="cdktf-provider-google-dataprocworkflowtemplateparametersvalidationregex"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**regexes** | <code>Array<string></code> | <span></span>
+
+
+
+## struct DataprocWorkflowTemplateParametersValidationValues  <a id="cdktf-provider-google-dataprocworkflowtemplateparametersvalidationvalues"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**values** | <code>Array<string></code> | <span></span>
+
+
+
+## struct DataprocWorkflowTemplatePlacement  <a id="cdktf-provider-google-dataprocworkflowtemplateplacement"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**clusterSelector**? | <code>Array<[DataprocWorkflowTemplatePlacementClusterSelector](#cdktf-provider-google-dataprocworkflowtemplateplacementclusterselector)></code> | cluster_selector block.<br/>__*Optional*__
+**managedCluster**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedCluster](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedcluster)></code> | managed_cluster block.<br/>__*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementClusterSelector  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementclusterselector"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**clusterLabels** | <code>Map<string, string></code> | <span></span>
+**zone**? | <code>string</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedCluster  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedcluster"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**clusterName** | <code>string</code> | <span></span>
+**config** | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfig)></code> | config block.
+**labels**? | <code>Map<string, string></code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfig  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**autoscalingConfig**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigautoscalingconfig)></code> | autoscaling_config block.<br/>__*Optional*__
+**encryptionConfig**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigencryptionconfig)></code> | encryption_config block.<br/>__*Optional*__
+**endpointConfig**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigendpointconfig)></code> | endpoint_config block.<br/>__*Optional*__
+**gceClusterConfig**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfiggceclusterconfig)></code> | gce_cluster_config block.<br/>__*Optional*__
+**initializationActions**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfiginitializationactions)></code> | initialization_actions block.<br/>__*Optional*__
+**lifecycleConfig**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfiglifecycleconfig)></code> | lifecycle_config block.<br/>__*Optional*__
+**masterConfig**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigmasterconfig)></code> | master_config block.<br/>__*Optional*__
+**secondaryWorkerConfig**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigsecondaryworkerconfig)></code> | secondary_worker_config block.<br/>__*Optional*__
+**securityConfig**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigsecurityconfig)></code> | security_config block.<br/>__*Optional*__
+**softwareConfig**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigSoftwareConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigsoftwareconfig)></code> | software_config block.<br/>__*Optional*__
+**stagingBucket**? | <code>string</code> | __*Optional*__
+**tempBucket**? | <code>string</code> | __*Optional*__
+**workerConfig**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigworkerconfig)></code> | worker_config block.<br/>__*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfig  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigautoscalingconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**policy**? | <code>string</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfig  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigencryptionconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**gcePdKmsKeyName**? | <code>string</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfig  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigendpointconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**enableHttpPortAccess**? | <code>boolean</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfig  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfiggceclusterconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**internalIpOnly**? | <code>boolean</code> | __*Optional*__
+**metadata**? | <code>Map<string, string></code> | __*Optional*__
+**network**? | <code>string</code> | __*Optional*__
+**nodeGroupAffinity**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinity](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfiggceclusterconfignodegroupaffinity)></code> | node_group_affinity block.<br/>__*Optional*__
+**privateIpv6GoogleAccess**? | <code>string</code> | __*Optional*__
+**reservationAffinity**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinity](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfiggceclusterconfigreservationaffinity)></code> | reservation_affinity block.<br/>__*Optional*__
+**serviceAccount**? | <code>string</code> | __*Optional*__
+**serviceAccountScopes**? | <code>Array<string></code> | __*Optional*__
+**subnetwork**? | <code>string</code> | __*Optional*__
+**tags**? | <code>Array<string></code> | __*Optional*__
+**zone**? | <code>string</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinity  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfiggceclusterconfignodegroupaffinity"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**nodeGroup** | <code>string</code> | <span></span>
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinity  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfiggceclusterconfigreservationaffinity"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**consumeReservationType**? | <code>string</code> | __*Optional*__
+**key**? | <code>string</code> | __*Optional*__
+**values**? | <code>Array<string></code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfiginitializationactions"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**executableFile**? | <code>string</code> | __*Optional*__
+**executionTimeout**? | <code>string</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfig  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfiglifecycleconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**autoDeleteTime**? | <code>string</code> | __*Optional*__
+**autoDeleteTtl**? | <code>string</code> | __*Optional*__
+**idleDeleteTtl**? | <code>string</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfig  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigmasterconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**accelerators**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigmasterconfigaccelerators)></code> | accelerators block.<br/>__*Optional*__
+**diskConfig**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigmasterconfigdiskconfig)></code> | disk_config block.<br/>__*Optional*__
+**image**? | <code>string</code> | __*Optional*__
+**machineType**? | <code>string</code> | __*Optional*__
+**minCpuPlatform**? | <code>string</code> | __*Optional*__
+**numInstances**? | <code>number</code> | __*Optional*__
+**preemptibility**? | <code>string</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigmasterconfigaccelerators"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**acceleratorCount**? | <code>number</code> | __*Optional*__
+**acceleratorType**? | <code>string</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfig  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigmasterconfigdiskconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**bootDiskSizeGb**? | <code>number</code> | __*Optional*__
+**bootDiskType**? | <code>string</code> | __*Optional*__
+**numLocalSsds**? | <code>number</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfig  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigsecondaryworkerconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**accelerators**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigsecondaryworkerconfigaccelerators)></code> | accelerators block.<br/>__*Optional*__
+**diskConfig**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigsecondaryworkerconfigdiskconfig)></code> | disk_config block.<br/>__*Optional*__
+**image**? | <code>string</code> | __*Optional*__
+**machineType**? | <code>string</code> | __*Optional*__
+**minCpuPlatform**? | <code>string</code> | __*Optional*__
+**numInstances**? | <code>number</code> | __*Optional*__
+**preemptibility**? | <code>string</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigsecondaryworkerconfigaccelerators"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**acceleratorCount**? | <code>number</code> | __*Optional*__
+**acceleratorType**? | <code>string</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfig  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigsecondaryworkerconfigdiskconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**bootDiskSizeGb**? | <code>number</code> | __*Optional*__
+**bootDiskType**? | <code>string</code> | __*Optional*__
+**numLocalSsds**? | <code>number</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfig  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigsecurityconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**kerberosConfig**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigsecurityconfigkerberosconfig)></code> | kerberos_config block.<br/>__*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfig  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigsecurityconfigkerberosconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**crossRealmTrustAdminServer**? | <code>string</code> | __*Optional*__
+**crossRealmTrustKdc**? | <code>string</code> | __*Optional*__
+**crossRealmTrustRealm**? | <code>string</code> | __*Optional*__
+**crossRealmTrustSharedPassword**? | <code>string</code> | __*Optional*__
+**enableKerberos**? | <code>boolean</code> | __*Optional*__
+**kdcDbKey**? | <code>string</code> | __*Optional*__
+**keyPassword**? | <code>string</code> | __*Optional*__
+**keystore**? | <code>string</code> | __*Optional*__
+**keystorePassword**? | <code>string</code> | __*Optional*__
+**kmsKey**? | <code>string</code> | __*Optional*__
+**realm**? | <code>string</code> | __*Optional*__
+**rootPrincipalPassword**? | <code>string</code> | __*Optional*__
+**tgtLifetimeHours**? | <code>number</code> | __*Optional*__
+**truststore**? | <code>string</code> | __*Optional*__
+**truststorePassword**? | <code>string</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigSoftwareConfig  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigsoftwareconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**imageVersion**? | <code>string</code> | __*Optional*__
+**properties**? | <code>Map<string, string></code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfig  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigworkerconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**accelerators**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigworkerconfigaccelerators)></code> | accelerators block.<br/>__*Optional*__
+**diskConfig**? | <code>Array<[DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfig](#cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigworkerconfigdiskconfig)></code> | disk_config block.<br/>__*Optional*__
+**image**? | <code>string</code> | __*Optional*__
+**machineType**? | <code>string</code> | __*Optional*__
+**minCpuPlatform**? | <code>string</code> | __*Optional*__
+**numInstances**? | <code>number</code> | __*Optional*__
+**preemptibility**? | <code>string</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigworkerconfigaccelerators"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**acceleratorCount**? | <code>number</code> | __*Optional*__
+**acceleratorType**? | <code>string</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfig  <a id="cdktf-provider-google-dataprocworkflowtemplateplacementmanagedclusterconfigworkerconfigdiskconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**bootDiskSizeGb**? | <code>number</code> | __*Optional*__
+**bootDiskType**? | <code>string</code> | __*Optional*__
+**numLocalSsds**? | <code>number</code> | __*Optional*__
+
+
+
+## struct DataprocWorkflowTemplateTimeouts  <a id="cdktf-provider-google-dataprocworkflowtemplatetimeouts"></a>
 
 
 
@@ -98566,10 +99755,24 @@ Name | Type | Description
 **ddl**? | <code>Array<string></code> | An optional list of DDL statements to run inside the newly created database.<br/>__*Optional*__
 **deletionProtection**? | <code>boolean</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**encryptionConfig**? | <code>Array<[SpannerDatabaseEncryptionConfig](#cdktf-provider-google-spannerdatabaseencryptionconfig)></code> | encryption_config block.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **project**? | <code>string</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **timeouts**? | <code>[SpannerDatabaseTimeouts](#cdktf-provider-google-spannerdatabasetimeouts)</code> | timeouts block.<br/>__*Optional*__
+
+
+
+## struct SpannerDatabaseEncryptionConfig  <a id="cdktf-provider-google-spannerdatabaseencryptionconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**kmsKeyName** | <code>string</code> | Fully qualified name of the KMS key to use to encrypt this database.
 
 
 
@@ -98842,8 +100045,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**pointInTime** | <code>string</code> | The timestamp of the point in time that should be restored.
 **sourceInstanceName** | <code>string</code> | The name of the instance from which the point in time should be restored.
+**pointInTime**? | <code>string</code> | The timestamp of the point in time that should be restored.<br/>__*Optional*__
 
 
 

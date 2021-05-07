@@ -20,7 +20,7 @@ DKIM, add \"\" inside the Terraform configuration string (e.g. "first255characte
   /** Number of seconds that this ResourceRecordSet can be cached by
 resolvers. */
   readonly ttl?: number;
-  /** One of valid DNS resource types. Possible values: ["A", "AAAA", "CAA", "CNAME", "MX", "NAPTR", "NS", "PTR", "SOA", "SPF", "SRV", "TLSA", "TXT"] */
+  /** One of valid DNS resource types. Possible values: ["A", "AAAA", "CAA", "CNAME", "DNSKEY", "DS", "IPSECVPNKEY", "MX", "NAPTR", "NS", "PTR", "SOA", "SPF", "SRV", "SSHFP", "TLSA", "TXT"] */
   readonly type: string;
   /** timeouts block */
   readonly timeouts?: DnsRecordSetTimeouts;

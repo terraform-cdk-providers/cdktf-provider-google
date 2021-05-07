@@ -19,9 +19,24 @@ error in any statement, the database is not created. */
 the instance is created. Values are of the form [a-z][-a-z0-9]*[a-z0-9]. */
   readonly name: string;
   readonly project?: string;
+  /** encryption_config block */
+  readonly encryptionConfig?: SpannerDatabaseEncryptionConfig[];
   /** timeouts block */
   readonly timeouts?: SpannerDatabaseTimeouts;
 }
+export interface SpannerDatabaseEncryptionConfig {
+  /** Fully qualified name of the KMS key to use to encrypt this database. This key must exist
+in the same location as the Spanner Database. */
+  readonly kmsKeyName: string;
+}
+
+function spannerDatabaseEncryptionConfigToTerraform(struct?: SpannerDatabaseEncryptionConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    kms_key_name: cdktf.stringToTerraform(struct!.kmsKeyName),
+  }
+}
+
 export interface SpannerDatabaseTimeouts {
   readonly create?: string;
   readonly delete?: string;
@@ -62,6 +77,7 @@ export class SpannerDatabase extends cdktf.TerraformResource {
     this._instance = config.instance;
     this._name = config.name;
     this._project = config.project;
+    this._encryptionConfig = config.encryptionConfig;
     this._timeouts = config.timeouts;
   }
 
@@ -153,6 +169,22 @@ export class SpannerDatabase extends cdktf.TerraformResource {
     return this.getStringAttribute('state');
   }
 
+  // encryption_config - computed: false, optional: true, required: false
+  private _encryptionConfig?: SpannerDatabaseEncryptionConfig[];
+  public get encryptionConfig() {
+    return this.interpolationForAttribute('encryption_config') as any;
+  }
+  public set encryptionConfig(value: SpannerDatabaseEncryptionConfig[] ) {
+    this._encryptionConfig = value;
+  }
+  public resetEncryptionConfig() {
+    this._encryptionConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionConfigInput() {
+    return this._encryptionConfig
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: SpannerDatabaseTimeouts;
   public get timeouts() {
@@ -180,6 +212,7 @@ export class SpannerDatabase extends cdktf.TerraformResource {
       instance: cdktf.stringToTerraform(this._instance),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
+      encryption_config: cdktf.listMapper(spannerDatabaseEncryptionConfigToTerraform)(this._encryptionConfig),
       timeouts: spannerDatabaseTimeoutsToTerraform(this._timeouts),
     };
   }

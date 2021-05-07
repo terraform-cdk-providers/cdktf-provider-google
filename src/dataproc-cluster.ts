@@ -46,6 +46,24 @@ function dataprocClusterClusterConfigEncryptionConfigToTerraform(struct?: Datapr
   }
 }
 
+export interface DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig {
+  /** Defines whether instances have integrity monitoring enabled. */
+  readonly enableIntegrityMonitoring?: boolean;
+  /** Defines whether instances have Secure Boot enabled. */
+  readonly enableSecureBoot?: boolean;
+  /** Defines whether instances have the vTPM enabled. */
+  readonly enableVtpm?: boolean;
+}
+
+function dataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigToTerraform(struct?: DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enable_integrity_monitoring: cdktf.booleanToTerraform(struct!.enableIntegrityMonitoring),
+    enable_secure_boot: cdktf.booleanToTerraform(struct!.enableSecureBoot),
+    enable_vtpm: cdktf.booleanToTerraform(struct!.enableVtpm),
+  }
+}
+
 export interface DataprocClusterClusterConfigGceClusterConfig {
   /** By default, clusters are not restricted to internal IP addresses, and will have ephemeral external IP addresses assigned to each instance. If set to true, all instances in the cluster will only have internal IP addresses. Note: Private Google Access (also known as privateIpGoogleAccess) must be enabled on the subnetwork that the cluster will be launched in. */
   readonly internalIpOnly?: boolean;
@@ -63,6 +81,8 @@ export interface DataprocClusterClusterConfigGceClusterConfig {
   readonly tags?: string[];
   /** The GCP zone where your data is stored and used (i.e. where the master and the worker nodes will be created in). If region is set to 'global' (default) then zone is mandatory, otherwise GCP is able to make use of Auto Zone Placement to determine this automatically for you. Note: This setting additionally determines and restricts which computing resources are available for use with other configs such as cluster_config.master_config.machine_type and cluster_config.worker_config.machine_type. */
   readonly zone?: string;
+  /** shielded_instance_config block */
+  readonly shieldedInstanceConfig?: DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig[];
 }
 
 function dataprocClusterClusterConfigGceClusterConfigToTerraform(struct?: DataprocClusterClusterConfigGceClusterConfig): any {
@@ -76,6 +96,7 @@ function dataprocClusterClusterConfigGceClusterConfigToTerraform(struct?: Datapr
     subnetwork: cdktf.stringToTerraform(struct!.subnetwork),
     tags: cdktf.listMapper(cdktf.stringToTerraform)(struct!.tags),
     zone: cdktf.stringToTerraform(struct!.zone),
+    shielded_instance_config: cdktf.listMapper(dataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigToTerraform)(struct!.shieldedInstanceConfig),
   }
 }
 
